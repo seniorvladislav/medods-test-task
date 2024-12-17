@@ -1,98 +1,80 @@
-# Junior Backend Task
+# Тестовое задание на позицию Junior Backend Developer
 
-This is a test project for the Junior Backend Developer position.
+## Содержание
 
-## Table of Contents
+- [Установка проекта](#установка-проектта)
+- [Скрипты](#скрипты)
+- [Форматирование и линтинг](#форматирование-и-линтинг)
+- [Docker Compose](#docker-compose)
 
-- [Project Setup](#project-setup)
-- [Scripts](#scripts)
-- [Testing](#testing)
-- [Formatting and Linting](#formatting-and-linting)
-- [Docker Support](#docker-support)
+## Установка проекта
 
-## Project Setup
-
-1. Clone the repository:
+1. Склонируйте репозиторий на локальную машину (или скачайте .zip архив):
 
    ```bash
-   git clone <repo_url>
-   cd <repo_name>
+   git clone https://github.com/seniorvladislav/medods-test-task medods-auth-jwt
+   cd medods-auth-jwt
    ```
 
-2. Install dependencies:
+2. Установите зависимости:
 
    ```bash
    npm install
    ```
 
-3. Start the development server:
+3. Запустите dev сервер:
    ```bash
    npm run dev
    ```
 
-## Scripts
+## Скрипты
 
-- **Start** the server in production:
+- **Запустить** сервер на проде:
   ```bash
   npm start
   ```
-- **Development mode** (with Nodemon):
+- **Dev Server (Nodemon)**:
   ```bash
   npm run dev
   ```
-- **Run tests** with Jest:
-  ```bash
-  npm test
-  ```
-- **Lint** the code with ESLint:
-  ```bash
-  npm run lint
-  ```
-- **Format** the code with Prettier:
-  ```bash
-  npm run format
-  ```
-
-## Testing
-
-The project uses **Jest** and **Supertest** for testing. Example test cases are provided for the authentication routes.
-
-To run tests:
-
-```bash
-npm test
-```
 
 ## Formatting and Linting
 
-This project uses **ESLint** and **Prettier** to maintain code quality and consistency.
+Этот проект использует **ESLint** and **Prettier** для поддержания качества и согласованности кода.
 
-To lint the project:
+Сделать **Lint** кода:
 
 ```bash
 npm run lint
 ```
 
-To format the code:
+**Отформатрировать** код:
 
 ```bash
 npm run format
 ```
 
-## Docker Support
+## Docker Compose
 
 The project includes a **Dockerfile** and **docker-compose.yml** for containerized deployment.
 
-To build and run with Docker Compose:
+**Запустить проект** через Docker Compose:
 
 ```bash
-docker-compose up --build
+docker-compose up -d --build
 ```
+
+**Выключить проект** Docker Compose:
+
+```bash
+docker-compose down
+```
+(можно добавить флаг -v для удаления БД)
 
 ## Database Initialization
 
-The database schema is provided in `data/init.sql`. Ensure the database service is running before applying the schema.
+Схема базы данных находится по пути `data/init.sql`. Убедитесь, что на локальном компьютере установлена и запущена СУБД PostgreSQL, либо запускайте проект непосредственно через **Docker Compose**.
 
 ---
 
-**Happy coding!**
+**До обратной связи!**
