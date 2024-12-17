@@ -1,0 +1,31 @@
+{
+  "name": "junior-backend-task",
+  "version": "1.0.0",
+  "description": "Test task for Junior Backend Developer position.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest",
+    "lint": "eslint . --fix",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.10.0",
+    "redis": "^4.7.0",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.0.0"
+  },
+  "author": "",
+  "license": "MIT"
+}

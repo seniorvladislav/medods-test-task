@@ -1,0 +1,4 @@
+node_modules
+bctest.js
+checkBlackList.js
+*.zip
