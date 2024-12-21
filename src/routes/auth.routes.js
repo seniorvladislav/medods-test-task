@@ -4,7 +4,6 @@ const {
   refreshTokens,
 } = require('../controllers/auth.controller');
 const { protectedRoute } = require('../middleware/privateRoute');
-// const { checkBlackList } = require("../middleware/checkBlackList");
 
 const router = express.Router();
 
